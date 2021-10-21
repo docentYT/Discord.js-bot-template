@@ -1,0 +1,104 @@
+{
+    "languages": [
+        "english",
+        "polish"
+    ],
+    "translations": {
+        "NONE": {
+            "english": "None",
+            "polish": "Brak"
+        },
+        "INFO_USER": {
+            "NICKNAME": {
+                "english": "Username",
+                "polish": "Nazwa użytkownika"
+            },
+            "USER_ID": {
+                "english": "User ID",
+                "polish": "ID Użytkownika"
+            },
+            "DISPLAY_NAME": {
+                "english": "Display name",
+                "polish": "Nazwa wyświetlana"
+            },
+            "DEFAULT_AVATAR": {
+                "english": "Default avatar",
+                "polish": "Domyślny avatar"
+            },
+            "DEFAULT_AVATAR_URL": {
+                "english": "Default avatar url",
+                "polish": "Url domyślnego avatara"
+            },
+            "IS_A_BOT": {
+                "english": "Is a bot?",
+                "polish": "Jest botem?"
+            },
+            "JOINED_AT": {
+                "english": "Joined at",
+                "polish": "Dołączono"
+            },
+            "CREATED_AT": {
+                "english": "Created at",
+                "polish": "Utworzono"
+            },
+            "LAST_MESSAGE": {
+                "english": "Last message",
+                "polish": "Ostatnia wiadomość"
+            },
+            "LAST_MESSAGE_CHANNEL": {
+                "english": "Last message channel",
+                "polish": "Kanał ostatniej wiadomości"
+            },
+            "PRESENCE": {
+                "english": "Presence",
+                "polish": "Aktywność"
+            },
+            "DISPLAY_HEX_COLOR": {
+                "english": "Display Hex Color",
+                "polish": "Wyświetlany Kolor Hex"
+            },
+            "BOOST_SICE": {
+                "english": "Boost sice",
+                "polish": "Boost od"
+            },
+            "ROLES": {
+                "english": "Roles",
+                "polish": "Role"
+            }
+        },
+        "INFO_SERVER": {
+            "OWNER": {
+                "english": "Owner",
+                "polish": "Właściciel"
+            },
+            "MEMBER_COUNT": {
+                "english": "Members",
+                "polish": "Członków"
+            },
+            "ROLES_COUNT": {
+                "english": "Roles",
+                "polish": "Role"
+            },
+            "CHANNELS": {
+                "english": "Channels",
+                "polish": "Kanały"
+            },
+            "TEXT_CHANNELS": {
+                "english": "Text channels",
+                "polish": "Kanały tekstowe"
+            },
+            "VOICE_CHANNELS": {
+                "english": "Voice channels",
+                "polish": "Kanały głosowe"
+            },
+            "CATEGORY_CHANNELS": {
+                "english": "Channel categories",
+                "polish": "Kategorie kanałów"
+            },
+            "CREATED_AT": {
+                "english": "Server created at",
+                "polish": "Serwer utworzony"
+            }
+        }
+    }
+}
