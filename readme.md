@@ -6,7 +6,6 @@ Discord.js v13 requires [Node.js](https://nodejs.org/) v16.6.0+ to run.
 Install the dependencies.
 ```sh
 npm install
-node index.js
 ```
 
 Create `.env` file in root directory.
