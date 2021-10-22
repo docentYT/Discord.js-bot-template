@@ -22,7 +22,7 @@ node index.js
 ```
 
 ## Creating new command
-Create new .js file in `/commands` folder.
+Create new .js file in `/commands/(optional more folders)` folder.
 ```js
 const { SlashCommandBuilder } = require('@discordjs/builders');
 

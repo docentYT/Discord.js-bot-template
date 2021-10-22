@@ -2,6 +2,7 @@ const fs = require('fs');
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
 const dotenv = require('dotenv');
+const getAllFiles = require('./src/getAllFiles');
 
 dotenv.config();
 const token = process.env.TOKEN;
@@ -11,10 +12,10 @@ const guildId = process.env.GUILD_ID;
 const commands = [];
 const guildCommands = [];
 const globalCommands = [];
-const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
+const commandFiles =  getAllFiles('./commands', '.js');
 
 for (const file of commandFiles) {
-    const command = require(`./commands/${file}`);
+    const command = require(file[0]);
     function Command(name, description, testOnly = true) {
         this.name = name;
         this.description = description;
