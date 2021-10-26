@@ -119,7 +119,7 @@ language.getEmbed(guild, "EMBED_NAME", "TRANSLATE_NAME");
 }
 ```
 
-## Index.json file
+## Index.js file
 ```js
 // Required imports.
 
