@@ -119,5 +119,19 @@ language.getEmbed(guild, "EMBED_NAME", "TRANSLATE_NAME");
 }
 ```
 
+## Index.json file
+```js
+// Required imports.
+
+const client = new Client({ intents: [Intents.FLAGS.GUILDS] }); // Provide intents for your bot.
+
+commandHandler(client, Collection, {
+    commandsDir: path.join(__dirname, 'commands'),  // Path to your commands folder.
+    eventsDir: path.join(__dirname, 'events')   // Path to your events folder.
+});
+
+client.login(token);
+```
+
 
 Feel free to report bugs and contribute!
