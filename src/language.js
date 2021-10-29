@@ -1,7 +1,7 @@
 const mongo = require('./mongo');
-const languageSchema = require('./schemas/language-schema');
-const lang = require('./lang.json');
-const { DEFAULT_LANGUAGE } = require('./config.json');
+const languageSchema = require('../schemas/language-schema');
+const lang = require('../lang.json');
+const { DEFAULT_LANGUAGE } = require('../config.json');
 
 // { 'guildId': 'language' }
 const guildLanguages = {};
@@ -68,6 +68,10 @@ const getEmbed = (guild, embed, textId) => {
 module.exports = (guild, textId) => {
     if (!lang.translations[textId]) {
         throw new Error(`Unknown text ID "${textId}"`);
+    };
+
+    if (!guildLanguages[guild.id]) {
+        return lang.translations[textId][DEFAULT_LANGUAGE];
     };
 
     const selectedlanguage = guildLanguages[guild.id].toLowerCase();

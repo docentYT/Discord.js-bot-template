@@ -31,6 +31,7 @@ module.exports = {
         .setName('ping') //Command name
         .setDescription('Replies with Pong!'), //Command description
     testOnly: true, // If true, slash command will be added only to the test guild.
+    requiredPermissions: ['ADMINISTRATOR'], // Array of permissions that allow you to run the command.
     async execute({ interaction, guild, member, user, channel, client } ) {
         await interaction.reply('Pong!');
     },
@@ -46,7 +47,7 @@ node deploy-commands.js
 ## Translating commands
 On top of your command add this line:
 ```js
-const language = require('../language');
+const language = require('../src/language');
 ```
 Next if you want to get translation use:
 ```js

@@ -1,8 +1,8 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
 
-const mongo = require('../mongo');
+const mongo = require('../src/mongo');
 const languageSchema = require('../schemas/language-schema');
-const { setLanguage } = require('../language');
+const { setLanguage } = require('../src/language');
 const { DEFAULT_LANGUAGE } = require('../config.json');
 
 module.exports = {
@@ -18,6 +18,7 @@ module.exports = {
                     .addChoice('english', 'english')
                     .addChoice('polski', 'polish')
                     .setRequired(true))),
+    requiredPermissions: ['ADMINISTRATOR'],
     async execute({ interaction, guild }) {
         if (interaction.options.getSubcommand() === 'language') {
             const targetLanguage = interaction.options.getString('language')

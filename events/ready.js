@@ -1,9 +1,9 @@
-const mongo = require('../mongo')
+const mongo = require('../src/mongo')
 const dotenv = require('dotenv');
 
 dotenv.config();
 
-const { loadLanguages } = require('../language')
+const { loadLanguages } = require('../src/language')
 
 module.exports = {
 	name: 'ready',
