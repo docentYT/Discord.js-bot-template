@@ -22,21 +22,12 @@ const loadLanguages = async (client) => {
 
                     if (!guild) {
                         console.log(`Removing guild ID "${_id}" from the database`);
-                        await languageSchema.deleteOne({ _id });     // await suggestionSchema.deleteOne({ guildId: guildId });
+                        await languageSchema.deleteOne({ _id });
                         return;
                     };
 
                     guildLanguages[_id] = language;
                 };
-            // for (const guild of client.guilds.cache) {
-            //     const guildId = guild[0];
-
-            //     const result = await languageSchema.findOne({
-            //         _id: guildId,
-            //     });
-
-            //     guildLanguages[guildId] = result ? result.language : 'english';
-            // }
         } finally {
             mongoose.connection.close();
         }

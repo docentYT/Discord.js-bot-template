@@ -1,4 +1,3 @@
-const fs = require('fs');
 const { Client, Collection, Intents } = require('discord.js');
 const commandHandler = require('./src/commandHandler')
 const dotenv = require('dotenv');

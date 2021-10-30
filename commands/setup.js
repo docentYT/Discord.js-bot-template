@@ -3,7 +3,6 @@ const { SlashCommandBuilder } = require('@discordjs/builders');
 const mongo = require('../src/mongo');
 const languageSchema = require('../schemas/language-schema');
 const { setLanguage } = require('../src/language');
-const { DEFAULT_LANGUAGE } = require('../config.json');
 
 module.exports = {
     data: new SlashCommandBuilder()
