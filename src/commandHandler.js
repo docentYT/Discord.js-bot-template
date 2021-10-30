@@ -15,7 +15,7 @@ module.exports = (client, Collection, { commandsDir, eventsDir }) => {
     }
 
     client.commands = new Collection();
-    const commandFiles =  getAllFiles(commandsDir, '.js'); // fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
+    const commandFiles =  getAllFiles(commandsDir, '.js');
 
     for (const file of commandFiles) {
         const command = require(file[0]);
